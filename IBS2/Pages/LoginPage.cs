@@ -1,18 +1,17 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using PageOrientedFramework.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PageOrientedFramework.Base
+namespace IBS2.Pages
 {
-    public abstract class BasePage
+    class LoginPage : BasePage
     {
-        public BasePage (IWebDriver driver)
-        {
-            PageFactory.InitElements(driver, this);
-        }
+        //Initialize page
+        public LoginPage(IWebDriver driver): base(driver)       
     }
 }
